@@ -1,0 +1,192 @@
+[
+    {
+        "id": 1,
+        "name": "Разработка логотипа для “Innovatec”",
+        "photo": "https://w.forfun.com/fetch/94/94c56e15f13f1de4740a76742b0b594f.jpeg",
+        "created_date": "05-05-2023",
+        "finish_date": "10-10-2023",
+        "status": "В процессе",
+        "managers": [{
+            "id": 1,
+            "fullname": "Анна Иванова", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png",
+            "isManager": 1
+        }, {
+            "id": 2,
+            "fullname": "Петр Первый", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png",
+            "isManager": 1
+        }],
+        "members": [{
+            "id": 3,
+            "fullname": "Зинаида Гиппиус", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 4,
+            "fullname": "Альберт Васильев", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 5,
+            "fullname": "Фрида Кало", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 6,
+            "fullname": "Кейт Бланшетт", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }],
+        "tasks_count": 7,
+        "completed_count": 4,
+        "categories": ["Брендбук", "Логотип"],
+        "client": {"id": 1, "name": "ООО “Innovatec”"},
+        "tags": "геральдика, гротеск, ренессанс, шурешки, симметрия, минимализм, узоры и орнаменты, векторная графика,",
+        "description": "Логотип для “Innovatec”. Компания “Innovatec” специализируется на разработке и внедрении инновационных технологических решений для бизнеса. Для создания логотипа для “Innovatec” можно использовать следующие идеи:",
+        "client_link": "https://site.ru/preview/Project_1",
+        "is_open": false,
+        "password_link": "qkksSl2A6"
+    },
+    {
+        "id": 2,
+        "name": "Разработка логотипа для “Innovatec”",
+        "photo": "https://w.forfun.com/fetch/94/94c56e15f13f1de4740a76742b0b594f.jpeg",
+        "created_date": "05-05-2023",
+        "finish_date": "10-10-2023",
+        "status": "В процессе",
+        "members": [{
+            "id": 1,
+            "fullname": "Анна Иванова", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 2,
+            "fullname": "Петр Первый", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 3,
+            "fullname": "Зинаида Гиппиус", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 4,
+            "fullname": "Альберт Васильев", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 5,
+            "fullname": "Фрида Кало", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 6,
+            "fullname": "Кейт Бланшетт", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }],
+        "tasks_count": 7,
+        "completed_count": 4,
+        "categories": ["Брендбук", "Логотип"]
+    },
+    
+    {
+        "id": 3,
+        "name": "Разработка логотипа для “Innovatec”",
+        "photo": "https://w.forfun.com/fetch/94/94c56e15f13f1de4740a76742b0b594f.jpeg",
+        "created_date": "05-05-2023",
+        "finish_date": "10-10-2023",
+        "status": "В процессе",
+        "members": [{
+            "id": 1,
+            "fullname": "Анна Иванова", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 2,
+            "fullname": "Петр Первый", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 3,
+            "fullname": "Зинаида Гиппиус", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 4,
+            "fullname": "Альберт Васильев", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 5,
+            "fullname": "Фрида Кало", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 6,
+            "fullname": "Кейт Бланшетт", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }],
+        "tasks_count": 7,
+        "completed_count": 4,
+        "categories": ["Брендбук", "Логотип"]
+    },
+    {
+        "id": 4,
+        "name": "Разработка логотипа для “Innovatec”",
+        "photo": "https://w.forfun.com/fetch/94/94c56e15f13f1de4740a76742b0b594f.jpeg",
+        "created_date": "05-05-2023",
+        "finish_date": "10-10-2023",
+        "status": "В процессе",
+        "members": [{
+            "id": 1,
+            "fullname": "Анна Иванова", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 2,
+            "fullname": "Петр Первый", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 3,
+            "fullname": "Зинаида Гиппиус", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 4,
+            "fullname": "Альберт Васильев", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 5,
+            "fullname": "Фрида Кало", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 6,
+            "fullname": "Кейт Бланшетт", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }],
+        "tasks_count": 7,
+        "completed_count": 4,
+        "categories": ["Брендбук", "Логотип"]
+    },
+    {
+        "id": 5,
+        "name": "Разработка логотипа для “Innovatec”",
+        "photo": "https://w.forfun.com/fetch/94/94c56e15f13f1de4740a76742b0b594f.jpeg",
+        "created_date": "05-05-2023",
+        "finish_date": "10-10-2023",
+        "status": "В процессе",
+        "members": [{
+            "id": 1,
+            "fullname": "Анна Иванова", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 2,
+            "fullname": "Петр Первый", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 3,
+            "fullname": "Зинаида Гиппиус", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 4,
+            "fullname": "Альберт Васильев", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 5,
+            "fullname": "Фрида Кало", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }, {
+            "id": 6,
+            "fullname": "Кейт Бланшетт", 
+            "photo": "https://vk-wiki.ru/wp-content/uploads/2019/06/user-1.png"
+        }],
+        "tasks_count": 7,
+        "completed_count": 4,
+        "categories": ["Брендбук", "Логотип"]
+    }
+]

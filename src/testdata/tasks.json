@@ -1,0 +1,38 @@
+[{
+    "id": 1,
+    "project_id": 1, 
+    "text": "Определить брендовую стратегию и целевую аудиторию",
+    "people": [{"fullname": "Анна Летяг", "id": 1},{"fullname": "Борис Звонарев", "id": 2}],
+    "status": "В процессе",
+    "is_sogl": true,
+    "parent_id": null,
+    "number": 1
+},{
+    "id": 2,
+    "project_id": 1, 
+    "text": "Подобрать референсы",
+    "people": [{"fullname": "Анна Летяг", "id": 1},{"fullname": "Борис Звонарев", "id": 2}],
+    "status": "Выполнено",
+    "is_sogl": false,
+    "parent_id": 1,
+    "number": 1
+},{
+    "id": 3,
+    "project_id": 1, 
+    "text": "Подобрать референсы 2",
+    "people": [{"fullname": "Анна Летяг", "id": 1},{"fullname": "Борис Звонарев", "id": 2}],
+    "status": "Выполнено",
+    "is_sogl": false,
+    "parent_id": 1,
+    "number": 2
+},{
+    "id": 4,
+    "project_id": 1, 
+    "text": "Подобрать референсы 2",
+    "people": [{"fullname": "Анна Летяг", "id": 1},{"fullname": "Борис Звонарев", "id": 2}],
+    "status": "Выполнено",
+    "is_sogl": false,
+    "parent_id": null,
+    "number": 2
+}
+]
