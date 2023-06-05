@@ -1,0 +1,38 @@
+.MuiInputBase-root {
+    border-radius: 1rem !important;
+    width: 100%;
+}
+
+.MuiFormControl-root {
+    width: 100%;
+    border-radius: 1rem !important;
+}
+
+
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+
+.MuiInputBase-root {
+    background-color: #EDEDED !important;
+} 
+
+.MuiFilledInput-root::before {
+    border-bottom: none;
+    content: "" !important;
+}
+
+.MuiFilledInput-root:hover::before {
+    border-bottom: none !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+    border-style: none !important;
+}
+
+.inputname {
+    color:#464646;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: Montserrat;
+}

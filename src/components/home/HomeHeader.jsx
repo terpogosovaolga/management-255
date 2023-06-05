@@ -1,13 +1,13 @@
 import { useState } from "react"
 
-export default function HomeHeader() {
+export default function HomeHeader({title}) {
 
     const [isOpenProfileMenu, setIsOpenProfileMenu] = useState(false);
  
     return (
         <div className="panel-header">
 			<div className="panel-header__title">
-				Проекты студии
+				{title}
 			</div>
 			<div className="panel-header__butons">
 				<a href="" className="panel-header__button hover-transform">

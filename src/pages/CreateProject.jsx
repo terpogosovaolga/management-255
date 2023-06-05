@@ -1,8 +1,10 @@
+import { useEffect, useState, useLocation } from "react";
 import LeftPanel from "../components/common/LeftPanel";
 import HomeHeader from "../components/home/HomeHeader";
-import HomeFilters from "../components/home/HomeFilters";
-import AllProjectsBlock from "../components/home/AllProjectsBlock";
-export default function Home() {
+import LeftForm from "../components/createproject/LeftForm";
+import "../assets/css/form.css";
+export default function CreateProject() {
+
     return (
         <div className="wrapper">
             <section>
@@ -11,11 +13,11 @@ export default function Home() {
                         <LeftPanel />
                         <div className="panel-content">
                             <HomeHeader title={"Проекты студии"}/>
-                            <HomeFilters />
-                            <AllProjectsBlock />
+                            <div className="editing__wrapper">
+                                <LeftForm />
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
             </section>
         </div>

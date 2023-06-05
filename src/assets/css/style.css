@@ -1756,9 +1756,9 @@ textarea.editing-panel-input__item {
   width: 250px;
   display: block;
   top: 8px;
-  opacity: 0;
+  /* opacity: 0; */
   pointer-events: none;
-  visibility: hidden;
+  /* visibility: hidden; */
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -2521,7 +2521,8 @@ textarea.editing-panel-input__item {
 
 .panel-link__list {
   max-height: 50vh;
-  overflow-y: auto; }
+  /* overflow-y: auto; */
+}
   .panel-link__list::-webkit-scrollbar {
     width: 5px; }
   .panel-link__list::-webkit-scrollbar-track {
@@ -3037,6 +3038,7 @@ textarea.editing-panel-input__item {
   margin-bottom: 12px; }
 
 .form-body__block {
+  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3271,7 +3273,7 @@ textarea.editing-panel-input__item {
   position: relative;
   padding-right: 28px;
   min-height: 34px;
-  max-width: 170px;
+  /* max-width: 170px; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3289,9 +3291,13 @@ textarea.editing-panel-input__item {
 
 .copia-content__content {
   display: inline-block;
-  max-width: 150px;
+  /* max-width: 150px; */
+  width: 90%;
   overflow: hidden;
   position: relative; }
+.copia-content__content::after, .copia-content__content::before {
+  content: none !important;
+}
   .copia-content__content:before {
     content: "...";
     position: absolute;
@@ -4617,4 +4623,8 @@ textarea.editing-panel-input__item {
 
 .pointer {
   cursor: pointer;
+}
+
+.h100 {
+  height: 100%;
 }

@@ -19,7 +19,7 @@ export default function Project() {
 					<div className="container panel__wrapper">
                         <LeftPanel />
                         <div className="panel-content">
-                            <HomeHeader />
+                            <HomeHeader title={"Проекты студии"}/>
                             <div className="editing__wrapper">
                                 {project && <EditingPanel project={project}/>}
                                 {project && <EditingContent project={project}/>}

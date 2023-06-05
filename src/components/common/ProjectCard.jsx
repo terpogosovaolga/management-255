@@ -10,6 +10,15 @@ export default function ProjectCard({project}) {
 
     const short_count = 4; // сколько человек видно сразу
 
+	const getColorOfProject = () => {
+		if (project.status.includes("выполн")) return "";
+		if (project.status.includes("отменен")) return "red";
+		if (completeness < 50) return "yellow";
+		return "green";
+	}
+
+	const color = getColorOfProject();
+
     return (
         <div class="project-block">
 			<div class="project-block-header ibg" style={{backgroundImage: "url("+project.photo+")"}}>
@@ -26,15 +35,15 @@ export default function ProjectCard({project}) {
 			</div>
 			<div class="project-block__wrapper">
 				<div class="project-block-days">
-					<div class="project-block__title project-block__title_green">
+					<div class={"project-block__title project-block__title_"+color}>
                         {days} 
 					</div>
 					<div class="project-block__text">
 						Дней до завершения
 					</div>
 				</div>
-				<div class="project-block-interest project-block-interest_60 project-block-interest_green">
-					<div class="project-block__title project-block__title_green">
+				<div class={"project-block-interest project-block-interest_"+Math.round(completeness / 5) * 5+" project-block-interest_"+color}>
+					<div class={"project-block__title project-block__title_"+color}>
 						{completeness}%
 					</div>
 					<div class="project-block__text">
@@ -44,7 +53,7 @@ export default function ProjectCard({project}) {
 			</div>
 			<div class="project-block__wrapper">
 				<div class="project-block-status">
-					<div class="project-block__title project-block__title_green">
+					<div class={"project-block__title project-block__title_"+color}>
 						{project.status}
 					</div>
 					<div class="project-block__text">
@@ -52,7 +61,7 @@ export default function ProjectCard({project}) {
 					</div>
 				</div>
 				<div class="project-block-tasks">
-					<div class="project-block__title project-block__title_green">
+					<div class={"project-block__title project-block__title_"+color}>
 						{project.completed_count}<span>/{project.tasks_count}</span>
 					</div>
 					<div class="project-block__text">
