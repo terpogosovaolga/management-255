@@ -8,8 +8,6 @@ export default function TasksBlock({project_id}) {
     const top_tasks = tasks.filter(t => t.parent_id == null).sort(comp);
 
     const getAllTasks = (task, nums) => {
-
-
         nums += task.number+".";
         const result = [<Task task={task} key={task.id} number={nums}/>];
         const children = tasks.filter(t => t.parent_id == task.id).sort(comp);

@@ -5,17 +5,18 @@ import PreviewAddress from "./PreviewAddress";
 import { useState } from "react";
 import Password from "./Password";
 import ProjectDatesInputs from "./ProjectDatesInputs";
-import SelectInput from "../common/inputs/SelectInput";
-import DataListInput from "../common/inputs/DataListInput";
 import Client from "./Client";
 import MultipleSelect from "../common/inputs/MultipleSelect";
 import TagsInput from "./TagsInput";
 import Switcher from "../common/inputs/Switcher";
+import statuses from '../../testdata/taskstatuses.json'; // наверно это другие статусы, но сейчас не важно 
+import StatusBlock from "./StatusBlock";
+import AddCategoryModal from "./modals/AddCategoryModal";
 
 export default function LeftForm() {
 
     const [link, setLink] = useState("Project_255");
-
+    const [open, setOpen] = useState(false);
     return (
         <form action="#" className="editing-panel">
             <TextInput 
@@ -86,7 +87,8 @@ export default function LeftForm() {
                             ]}
                             fieldName="title"/>
 					</div>
-					<a href="#" class="editing-panel-input__button hover-transform"></a>
+					<span class="editing-panel-input__button hover-transform" onClick={() => setOpen(true)}></span>
+                    <AddCategoryModal open={open} closeFunc={() => setOpen(false)} />
 				</div>
 			</div>
             <div class="editing-panel-input">
@@ -97,10 +99,14 @@ export default function LeftForm() {
 			</div>
             <span class="editing-panel__line mt-3"></span>
             <div class="editing-panel-checkbox">
-				<Switcher rightText="Скрыть от других руководителей"/>
-				<Switcher rightText="Скрыть от других исполнителей"/>
-				<Switcher rightText="Скрыть из общего списка проектов"/>
-				<Switcher rightText="Скрыть для клиента"/>
+				<Switcher rightText="Скрыть от других руководителей" fontFamily="Montserrat"/>
+				<Switcher rightText="Скрыть от других исполнителей" fontFamily="Montserrat"/>
+				<Switcher rightText="Скрыть из общего списка проектов" fontFamily="Montserrat"/>
+				<Switcher rightText="Скрыть для клиента" fontFamily="Montserrat"/>
 			</div>
+            <span class="editing-panel__line mt-3"></span>
+            {/* selected - это объект */}
+			<StatusBlock data={statuses} selected={statuses[0]} handleSaveData={() => console.log('saving data')}/> 
+            
         </form>)
 }

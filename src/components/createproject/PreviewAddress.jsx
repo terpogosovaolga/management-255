@@ -20,7 +20,7 @@ export default function PreviewAddress({link}) {
                 <a href={"https://site.com/preview/"+link} id="copied___link" class="hover-transform copia-content__content editing-panel-link__content">{"https://site.com/preview/"+link}</a>
                 <span class="copia-content__button" onClick={copyLink}><img src={copy} alt="" /></span>
             </div>
-            <span style={{fontSize: "0.75rem", color: "rgba(0, 0, 0, 0.6);"}}>{message}</span>
+            <span style={{fontSize: "0.75rem",  fontFamily: "Montserrat", color: "rgba(0, 0, 0, 0.6);"}}>{message}</span>
         </>
     )
 }

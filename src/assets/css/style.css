@@ -1673,7 +1673,7 @@ textarea.editing-panel-input__item {
   -webkit-box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 10px;
-  z-index: 101;
+  /* z-index: 101; */
   cursor: pointer; }
 
 .editing-content-sample-panel__button-wrapper {
@@ -1757,7 +1757,7 @@ textarea.editing-panel-input__item {
   display: block;
   top: 8px;
   /* opacity: 0; */
-  pointer-events: none;
+  /* pointer-events: none; */
   /* visibility: hidden; */
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;

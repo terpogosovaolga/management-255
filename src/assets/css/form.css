@@ -36,3 +36,11 @@
     margin-bottom: 0.5rem;
     font-family: Montserrat;
 }
+
+.MuiCheckbox-root {
+    padding: 0 !important;
+}
+
+.MuiFormHelperText-root {
+    font-family: "Montserrat" !important;
+}

@@ -1,0 +1,30 @@
+.save-edit-project-button {
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #0075ff;
+    background-color: #0075ff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 12px;
+    margin-left: 10px;
+}
+
+.modal-btn {
+    background-color: #0075FF;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+}
+
+.modal-close {
+    position: absolute;
+    top: -0.3rem;
+    right: -0.3rem;
+
+}

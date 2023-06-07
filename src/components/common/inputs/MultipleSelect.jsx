@@ -15,7 +15,7 @@ export default function MultipleSelect({options, fieldName}) {
             getOptionLabel={(option) => option[fieldName]}
             value={value}
             onChange={(_, newValue) => {
-            setValue(newValue);
+                setValue(newValue);
             }}
             renderInput={(params) => (
             <TextField

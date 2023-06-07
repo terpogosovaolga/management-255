@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./assets/css/style.css";
+import "./assets/css/news.css";
 import Home from "./pages/Home";
 import { Routes, Route } from "react-router-dom";
 import Project from "./pages/Project";

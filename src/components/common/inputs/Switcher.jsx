@@ -44,18 +44,18 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
     },
   }));
 
-export default function Switcher({leftText, rightText}) {
+export default function Switcher({leftText, rightText, fontFamily}) {
 
     const [active, setActive] = useState(false);
 
     return (
         <Stack direction="row" spacing={1} alignItems="center">
-           { leftText && <Typography>{leftText}</Typography>}
+           { leftText && <Typography fontFamily={fontFamily ? fontFamily : ""}>{leftText}</Typography>}
             <AntSwitch inputProps={{ 'aria-label': 'ant design' }} 
                 checked={active}
                 onClick={() => setActive(!active)}
             />
-            { rightText && <Typography>{rightText}</Typography>}
+            { rightText && <Typography fontFamily="Montserrat">{rightText}</Typography>}
         </Stack>
     )
 }

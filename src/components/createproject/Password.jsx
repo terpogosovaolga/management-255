@@ -44,7 +44,7 @@ export default function Password() {
                         error={value.length < length && !isFree} 
                         disabled={isFree ? false : true}
                     />
-                    <a href="#" style={style} className="editing-panel-input__link hover-transform" onClick={handlePassword}>{isFree ? "Задать пароль" : "Сделать публичной"}</a>
+                    <span style={style} className="editing-panel-input__link hover-transform" onClick={handlePassword}>{isFree ? "Задать пароль" : "Сделать публичной"}</span>
                 </div>
 			</div>
         
