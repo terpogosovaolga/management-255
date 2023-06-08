@@ -3378,8 +3378,7 @@ textarea.editing-panel-input__item {
   padding: 5px 24px; }
   .admin-panel-link.active {
     background: #0075ff; }
-  .admin-panel-link.active .admin-panel-link__img {
-    display: none; }
+
   .admin-panel-link.active .admin-panel-link__img.admin-panel-link__img_f {
     display: block; }
   .admin-panel-link.active span {
@@ -3726,7 +3725,7 @@ textarea.editing-panel-input__item {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }

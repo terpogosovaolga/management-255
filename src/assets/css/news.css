@@ -28,3 +28,55 @@
     right: -0.3rem;
 
 }
+
+.pattern-parent * {
+    height: 50px !important;
+}
+.pattern-parent .css-1q60rmi-MuiAutocomplete-endAdornment {
+    height: auto !important;
+    top: calc(50% - 25px) !important;
+}
+
+/* .pattern-parent .MuiAutocomplete-input {
+    position: absolute !important;
+    padding: 0 !important;
+    width: 100% !important;
+} */
+
+.pattern-parent .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input {
+    position: absolute;
+    width: 70% !important;  
+    padding: 0 !important;
+}
+
+.delete-task-btn {
+    font-size: 1rem;
+    font-family: "Montserrat";
+    padding: 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+.delete-task-btn:hover {
+    background-color: #ECECEC;
+
+}
+.task-on-agreement-marker {
+    display: inline-block;
+    background-color: #ff9900;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.form-body__cancel-button {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 25px;
+    border: 2px solid #0075FF;
+    width: 40%;
+}
