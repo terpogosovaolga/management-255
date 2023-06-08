@@ -12,15 +12,12 @@ export default function SelectPeople({people}) {
         const index = selectedPeople.findIndex(p2 => p2.id == p.id);
         let newm = [];
         if (index > -1) {
-            console.log('removing', index);
             newm = selectedPeople.filter((_,i) => i!=index);
         }
         else  {
-            console.log('adding');
-            newm = selectedPeople;
+            newm = selectedPeople.slice();
             newm.push(p);
         }
-        console.log(newm);
         setSelectedPeople(newm);
     }
     return (

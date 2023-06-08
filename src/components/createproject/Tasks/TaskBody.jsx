@@ -1,16 +1,43 @@
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import menu from '../../../assets/img/task-menu.svg';
 import close from '../../../assets/img/close-x.svg';
 import TextInput from "../../common/inputs/TextInput";
 import statuses from '../../../testdata/taskstatuses.json';
 import StatusesAndPeople from "./StatusesAndPeople";
 import users from '../../../testdata/users.json';
+import { TasksContext } from "../RightForm";
+import { changeNumberOfTasks } from "../../../funcs/tasksFunctions";
 
-export default function TaskBody({task, status_}) {
+export default function TaskBody({task, status_, setStatus, toggleIsSogl}) {
 
-    
-	const [status, setStatus] = useState(status_);
+	const {tasks, setTasks} = useContext(TasksContext);
+	// удаляет задачу и все подзадачи. Вызывается из StatusesAndPeople
+	const removeTask = () => {
+		const _tasks = tasks.slice();
+		let index = _tasks.findIndex(t => t.id == task.id);
+		let _tasks2 = removeChild(_tasks, task.id);
+		_tasks2.splice(index, 1);
+		changeNumberOfTasks(_tasks2, task.number+1, task.number, task.parent_id);
+		setTasks(_tasks2);
+	}
+
+	// рекурсивно удаляет все подзадачи задачи и их подзадачи  и их подзадачи и их подзадачи и их подзадачи и их подзадачи и их подзадачи и их подзадачи и их подзадачи и их подзадачи и их подзадачи и их подзадачи и их подзадачи..
+	const removeChild = (array, parent) => {
+		const ids = [];
+		for (const a of array) {
+			if (a.parent_id == parent) {
+				ids.push(a.id);
+			}
+		}
+		let array2 = array.slice();
+		for (const i of ids) {
+			array2 = removeChild(array, i);
+		}
+		let array3 = array2.filter(a => a.parent_id != parent);
+		return array3;
+	}
+
 	const [isStatusesOpen, setIsStatusesOpen] = useState(false);
 	const style = isStatusesOpen ? {
         boxShadow: "none",
@@ -36,7 +63,7 @@ export default function TaskBody({task, status_}) {
 							</span>
 						</div>
 					</div>
-					{isStatusesOpen && <StatusesAndPeople statuses={statuses} people={users}  />}
+					{isStatusesOpen && <StatusesAndPeople statuses={statuses} people={users} removeTask={removeTask} changeStatus={setStatus} toggleIsSogl={toggleIsSogl}/>}
 				</div>
 			</div>
 			<div className="editing-content-sample__reght-button">

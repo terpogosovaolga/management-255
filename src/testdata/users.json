@@ -1,1 +1,34 @@
-[{"fullname": "Анна Летяг", "id": 1}, {"id": 3, "fullname": "Яковлева Софья"}, {"id": 4, "fullname": "Цуканова Алевтина"}, {"fullname": "Борис Звонарев", "id": 2}]
+[
+    {
+        "fullname": "Анна Литяг", 
+        "id": 1, 
+        "surname": "Литяг", 
+        "name": "Анна",
+        "profession": 1,
+        "completed_projects": 37,
+        "date": "01-01-2022",
+        "photo": "https://ic.pics.livejournal.com/anchiktigra/18346223/2466319/2466319_original.jpg"
+    }, 
+    {"id": 3, "fullname": "Яковлева Софья",
+    "surname": "Яковлева", 
+    "name": "Софья",
+    "patronymic": "Игоревна",
+    "profession": 2,
+    "completed_projects": 2,
+    "date": "01-05-2023",
+    "photo": "https://ic.pics.livejournal.com/anchiktigra/18346223/2466319/2466319_original.jpg"}, 
+    {"id": 4, "fullname": "Цуканова Алевтина", "surname": "Цуканова", 
+    "name": "Алевтина",
+    "patronymic": "Петровна",
+    "profession": 1,
+    "completed_projects": 123,
+    "date": "01-05-2020",
+    "photo": "https://ic.pics.livejournal.com/anchiktigra/18346223/2466319/2466319_original.jpg"}, 
+    {"fullname": "Борис Звонарев", "id": 2, "surname": "Звонарев", 
+    "name": "Борис",
+    "patronymic": "Алексеевич",
+    "profession": 3,
+    "completed_projects": 123,
+    "date": "01-05-2020",
+    "photo": "https://ic.pics.livejournal.com/anchiktigra/18346223/2466319/2466319_original.jpg"}
+]

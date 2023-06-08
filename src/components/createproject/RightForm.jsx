@@ -7,12 +7,15 @@ import { createContext, useEffect, useState } from "react";
 export const TasksContext = createContext({});
 export default function RightForm() {
 
-    const [tasks1, setTasks2] = useState(data ? data : []);
+    const [tasks1, setTasks2] = useState([]);
     const handleTasks = (t) => {
         setTasks2(t);
-        console.log('handle');
-        console.log(tasks1);
     }
+
+    useEffect(() => {
+        console.log('получен новый список тасков : ');
+        console.log(tasks1);
+    }, [tasks1]);
 
 
     return (

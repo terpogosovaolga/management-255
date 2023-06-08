@@ -12,6 +12,6 @@ export default function CheckBoxInput({defVal, object, fieldname, label, style, 
         label = object[fieldname ? fieldname : "name"];
     } 
     return (
-        <FormControlLabel checked={ch} onChange={handleChange}   control={<Checkbox/>}  label={label} sx={style?style:{}}/>
+        <FormControlLabel checked={ch} onChange={handleChange}  control={<Checkbox/>}  label={label} sx={style?{...style, fontFamily: "Montserrat"}:{fontFamily: "Montserrat"}}/>
     )
 }

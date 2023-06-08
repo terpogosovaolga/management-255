@@ -10,6 +10,18 @@ export default function EditingTasksBlock() {
     
     const {tasks, setTasks} = useContext(TasksContext);
 
+    if (tasks.length == 0) {
+        setTasks([{
+            id: Math.random(),
+            parent_id: null,
+            text: "",
+            status: 1,
+            people: [],
+            is_sogl: true,
+            number: 1
+        }]);
+    }
+
     const top_tasks = tasks.length > 0 ? tasks.filter(t => t.parent_id == null).sort(comp) : {};
     const getAllTasks = (task, nums) => {
         nums += task.number+".";
@@ -28,7 +40,7 @@ export default function EditingTasksBlock() {
     const addButtons = (elems, nums) => {
         let level = nums.split(".").length - 2; // уровень - это количество точек -1
 	    if (level < 0) level = 0;
-        elems.push(<TaskButtonAdding nums={nums} level={level}/>)
+        elems.push(<TaskButtonAdding nums={nums} level={level} />)
     }
     return (
         <>
