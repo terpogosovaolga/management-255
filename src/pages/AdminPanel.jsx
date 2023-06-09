@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react"
 import LeftPanel from "../components/common/LeftPanel";
 import HomeHeader from "../components/home/HomeHeader";
-import HomeFilters from "../components/home/HomeFilters";
-import AllProjectsBlock from "../components/home/AllProjectsBlock";
 import AdminMenu from "../components/adminpanel/AdminMenu";
 import { useLocation, useNavigate } from "react-router-dom";
 import SectionManager from "../components/adminpanel/SectionManager";
@@ -14,7 +12,7 @@ export default function AdminPanel() {
     const navigate = useNavigate();
 
     const sectionArray = ["users", "customers", "projects", "categories", "professions", "industries", "task-patterns"];
-    const sectionGuess = sectionArray.indexOf(sectionName.toLowerCase().trim());
+    const sectionGuess = sectionName ? sectionArray.indexOf(sectionName.toLowerCase().trim()) : -1;
 
     const [section, setSection] = useState(sectionName && sectionGuess > 0 ? sectionGuess : 0);
 
