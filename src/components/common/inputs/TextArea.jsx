@@ -2,7 +2,7 @@
 import TextField from '@mui/material/TextField';
 import { useRef, useState } from 'react';
 
-export default function TextInput({text, placeholder, goodText, badText, length, rows}) {
+export default function TextArea({text, placeholder, goodText, badText, length, rows, defVal}) {
 
     // text - то, что написано сверху. если null, то сверху не будет параграфа 
     // placeholder он и в африке placeholder
@@ -11,7 +11,7 @@ export default function TextInput({text, placeholder, goodText, badText, length,
     // length - минимальная длина. Если поле обязательное, но без ограничения, то length=1. Если поле необязательное, то length = 0
     // rows - количество строк 
 
-    const [value, setValue] = useState("");
+    const [value, setValue] = useState(defVal ? defVal : "");
     return (
         <div>
             {text && <p className='inputname'>{text}</p>}

@@ -44,9 +44,9 @@ const AntSwitch = styled(Switch)(({ theme }) => ({
     },
   }));
 
-export default function Switcher({leftText, rightText, fontFamily}) {
+export default function Switcher({leftText, rightText, fontFamily, defVal}) {
 
-    const [active, setActive] = useState(false);
+    const [active, setActive] = useState(defVal ? defVal : false);
 
     return (
         <Stack direction="row" spacing={1} alignItems="center">

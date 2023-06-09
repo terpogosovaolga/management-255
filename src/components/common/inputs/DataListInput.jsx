@@ -8,7 +8,7 @@ export default function DataListInput({options, fieldName, active, handleFunc, w
     let sx = {};
     if (width)  sx.width=width;
     if (height)  sx.height=height;
-    console.log(sx);
+    console.log(value);
 
     return (
         <Autocomplete
@@ -17,7 +17,7 @@ export default function DataListInput({options, fieldName, active, handleFunc, w
             options={options}
             getOptionLabel={(option) => option[fieldName ? fieldName : "name"]}
             sx={sx}
-            value={value ? value : obj}
+            value={value}
             onChange={
                 handleFunc ? 
                     (e, newValue) => { handleFunc(newValue); setValue(newValue) } 
