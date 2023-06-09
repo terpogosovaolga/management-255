@@ -5,7 +5,7 @@
         "photo": "https://w.forfun.com/fetch/94/94c56e15f13f1de4740a76742b0b594f.jpeg",
         "created_date": "05-05-2023",
         "finish_date": "10-10-2023",
-        "status": "В процессе",
+        "status": "Согласование",
         "managers": [{
             "id": 1,
             "fullname": "Анна Иванова", 
@@ -42,7 +42,12 @@
         "description": "Логотип для “Innovatec”. Компания “Innovatec” специализируется на разработке и внедрении инновационных технологических решений для бизнеса. Для создания логотипа для “Innovatec” можно использовать следующие идеи:",
         "client_link": "https://site.ru/preview/Project_1",
         "is_open": false,
-        "password_link": "qkksSl2A6"
+        "password_link": "qkksSl2A6",
+        "hidden_managers": true,
+        "hidden_members": true,
+        "hidden_list": true,
+        "hidden_client": true
+
     },
     {
         "id": 2,
