@@ -1,30 +1,30 @@
-import { useState } from "react";
-import UserTr from "./UserTr";
+import CustomerTr from "./CustomerTr";
 
-export default function UsersTable({users}) {
 
+export default function CustomersTable({customers}) {
+    
     return (
         <div className="admin-panel-table__wrapper">
 			<table className="admin-panel-table">
                 <tr className="admin-panel-table__title">
                     <td className="admin-panel-table__content">
-                        ФИО
+                        Наименование
                     </td>
                     <td className="admin-panel-table__content">
-                        Должность
+                        Ниша
                     </td>
                     <td className="admin-panel-table__content">
-                        Завершено <br />
-                        проектов
+                        Проектов <br />
+                        заказано
                     </td>
                     <td className="admin-panel-table__content">
-                        Работает <br />
-                        в студии
+                        Последний <br />
+                        заказ
                     </td>
                 </tr>
 
                 {
-                    users.map(u => <UserTr user={u} key={u.id} />)
+                    customers.map(c => <CustomerTr customer={c} key={c.id} />)
                 }
 
            </table>
